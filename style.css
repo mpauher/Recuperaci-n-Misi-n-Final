@@ -1,0 +1,31 @@
+body{
+    background-image: url('./assets/img/bground.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.w-40{
+    width: 40%;
+}
+
+.w-30{
+    width: 30%;
+}
+
+input[type="email"]:blank{
+    background-image: url('./assets/img/icon-user.svg');
+    background-position: 6px 8.5px;
+    background-repeat: no-repeat;
+    background-size: 15px;
+}
+
+.logo-coex{
+    width: 150px;
+    background-color: white;
+    border: 1px rgb(185, 185, 185) solid;
+    padding: 10px 15px;
+
+}
+
+
+

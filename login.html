@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="d-flex m-3 justify-content-end">
+        <img src="./assets/img/logo-coex.svg " class="logo-coex">
+    </div>
+
+    <div class="d-flex justify-content-center w-100">
+        <div class="text-center">
+            <div>
+                <img src="./assets/img/logo-login.svg" class="logo-login mb-5">
+                <h2 class="mb-3">Iniciar sesión</h2>
+    
+                <form class="was-validated">              
+                    <input type="email" class="form-control mb-3" id="user" placeholder="Usuario" required>
+                    <input type="password" class="form-control mb-3" id="password" placeholder="Contraseña" required>
+                    <button class="btn btn-primary w-100" onclick="logIn()" type="reset">Ingresar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+
+</html>
