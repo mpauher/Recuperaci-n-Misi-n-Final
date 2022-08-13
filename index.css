@@ -45,6 +45,10 @@ body {
     color:darkslategrey;
 }
 
+.logo-nav{
+    width: 60px;
+}
+
 .nav-flush .nav-link {
     border-radius: 0;
 }
@@ -66,10 +70,18 @@ input[type="search"]{
 .products-img{
     width: 120px;
     height: 120px;
-    
+
 }
 
-/* .products-name{
-    font-weight: bold;
-    
-} */
+.products-card{
+    position: relative;
+}
+
+.icon-badge{
+    width:15px;
+}
+
+.category-badge{
+    background-color: rgb(230, 230, 230);
+    border-radius: 1em;
+}
