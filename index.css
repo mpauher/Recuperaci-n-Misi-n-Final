@@ -18,15 +18,12 @@
 
 li {
     list-style: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
     
 }
 
 li a {
     text-decoration: none;
     color:gray;
-
 }
 
 body {
@@ -35,10 +32,9 @@ body {
   }
   
 .side-bar{
-    width: 7rem;
+    width: 18vh;
     box-shadow: 1px 1px 8px rgb(206, 203, 203);
     height: 100vh;
-    
 }
 
 .text-logo-navbar{
@@ -70,6 +66,7 @@ input[type="search"]{
 .products-img{
     width: 120px;
     height: 120px;
+    object-fit: cover;
 
 }
 
@@ -78,10 +75,17 @@ input[type="search"]{
 }
 
 .icon-badge{
-    width:15px;
+    width:18px;
 }
 
 .category-badge{
     background-color: rgb(230, 230, 230);
     border-radius: 1em;
 }
+
+
+/* .nav-link:hover{
+    background-color: rgb(37, 115, 216);
+    fill: white;
+} */
+
