@@ -168,10 +168,23 @@
     </div>
 
     <script>
+
+      var ref = document.referrer;
+      console.log (ref);
+
+      if (ref == "http://127.0.0.1:5500/login.html") {
         setTimeout(() => {
-            const loading = document.getElementById('loading');
-            loading.style.visibility = 'hidden';
-        }, 1500);
+        const loading = document.getElementById('loading');
+        loading.style.visibility = 'hidden';
+      }, 1500);
+      } else {
+        setTimeout(() => {
+        const loading = document.getElementById('loading');
+        loading.style.visibility = 'hidden';
+      }, 0);
+      }
+      
+
     </script>
 
     <script>

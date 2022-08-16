@@ -11,10 +11,6 @@
     <script src="https://unpkg.com/vue@3"></script>
 </head>
 <body>
-    <div id="loading">
-        <img id="loading-image" src="./assets/img/load.svg" alt="Loading..." />
-    </div>
-
     <div class="d-flex">
       <header>
         <div class="side-bar d-flex flex-column bg-light px-2">
@@ -56,13 +52,56 @@
       <main class="w-100">
 
         <div id="app">
-          <div class="p-5">
-            <h6>Configuraciones</h6>
-                
+            <div class="p-5">
+                <h6>Configuraciones</h6>
+                <ul class="nav nav-tabs mt-5" id="nav-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-item nav-link active" id="nav-categorias-tab" data-toggle="tab" href="#nav-categorias" role="tab" aria-controls="nav-categorias" aria-selected="true">Categorías</a>                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" id="nav-atributos-tab" data-toggle="tab" href="#nav-atributos" role="tab" aria-controls="nav-atributos" aria-selected="false">Atributos</a>                    </li>
+                    <li class="nav-item">
+                        <a class="nav-item nav-link" id="nav-tallas-tab" data-toggle="tab" href="#nav-tallas" role="tab" aria-controls="nav-tallas" aria-selected="false">Tallas</a>                    </li>
+                </ul>                
             </div>
 
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active w-50 ms-5" id="nav-categorias" role="tabpanel" aria-labelledby="nav-categorias-tab">
+                    <div class="row mt-2">
+                      <div class="col-md-5">
+                        <h1>Categorías</h1>
+                      </div>
+                      <div class="col-md-4 offset-md-3">
+                        <button class="btn btn-primary w-100" type="submit">Crear Categorías</button>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-2">
 
-          </div>            
+                        </div>
+                        <div class="col-md-4">
+
+                        </div>
+                        <div class="col-md-1 offset-md-3">
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+                        <div class="col-md-1">
+
+                        </div>
+
+                      </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="nav-atributos" role="tabpanel" aria-labelledby="nav-atributos-tab">
+                    ..
+                </div>
+
+                <div class="tab-pane fade" id="nav-tallas" role="tabpanel" aria-labelledby="nav-tallas-tab">
+
+                </div>
+            </div>
+
         </div>
 
         
@@ -70,13 +109,6 @@
   
 
     </div>
-
-    <script>
-        setTimeout(() => {
-            const loading = document.getElementById('loading');
-            loading.style.visibility = 'hidden';
-        }, 1500);
-    </script>
 
     <script>
       const { createApp } = Vue
