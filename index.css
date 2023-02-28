@@ -34,7 +34,8 @@ body {
 .side-bar{
     width: 18vh;
     box-shadow: 1px 1px 8px rgb(206, 203, 203);
-    height: 100vh;
+    min-height: 100vh;
+    height: 100%;
 }
 
 .text-logo-navbar{
